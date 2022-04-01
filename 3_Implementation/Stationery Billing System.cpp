@@ -224,7 +224,7 @@ int main()
 				name[strlen(name)-1] = 0;
 			
 				system("clear");
-				fp = fopen("Store.dat", "r");
+				fp = fopen("StoreBill.dat", "r");
 				printf("\t  ************ Invoices Of %s ************\n", name);
 				while(fread(&order, sizeof(struct orders), 1, fp))
 				{
